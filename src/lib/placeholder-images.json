@@ -73,6 +73,30 @@
       "imageHint": "aso ebi"
     },
     {
+      "id": "product-11",
+      "description": "A modern adire silk kaftan",
+      "imageUrl": "https://images.unsplash.com/photo-1617181363668-5687752f7f13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuaWdlcmlhbiUyMGZhc2hpb258ZW58MHx8fHwxNzIyNDU4MjQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adire kaftan"
+    },
+    {
+      "id": "product-12",
+      "description": "A men's grand agbada set",
+      "imageUrl": "https://images.unsplash.com/photo-1636597793455-a22a31b6b553?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZ2JhZGF8ZW58MHx8fHwxNzIyNDU4MzI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "agbada set"
+    },
+    {
+      "id": "product-13",
+      "description": "A soft cashmere blend scarf",
+      "imageUrl": "https://images.unsplash.com/photo-1549495349-4a7b9a5c8264?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXNobWVyZSUyMHNjYXJmfGVufDB8fHx8fDE3MjI0NTg0MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cashmere scarf"
+    },
+    {
+      "id": "product-14",
+      "description": "Velvet smoking slippers",
+      "imageUrl": "https://images.unsplash.com/photo-1617606002736-222476508974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2ZWx2ZXQlMjBzbGlwcGVyc3xlbnwwfHx8fDE3MjI0NTg0ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "velvet slippers"
+    },
+    {
       "id": "course-1",
       "description": "Person learning fashion illustration",
       "imageUrl": "https://images.unsplash.com/photo-1557777586-f6682739fcf3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwaWxsdXN0cmF0aW9ufGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",

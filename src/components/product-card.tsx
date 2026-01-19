@@ -28,9 +28,9 @@ export default function ProductCard({ product }: ProductCardProps) {
                 <QuickViewDialog product={product} />
             </div>
         </div>
-        <CardContent className="p-4 text-center">
-            <h3 className="text-base font-medium">{product.name}</h3>
-            <p className="mt-1 text-lg font-semibold">₦{product.price.toLocaleString()}</p>
+        <CardContent className="p-3 text-center">
+            <h3 className="text-sm font-medium">{product.name}</h3>
+            <p className="mt-1 text-base font-semibold">₦{product.price.toLocaleString()}</p>
         </CardContent>
     </Card>
   );

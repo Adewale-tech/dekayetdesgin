@@ -145,6 +145,46 @@ export const products: Product[] = [
         colors: ["Royal Blue", "Gold"],
         sizes: ["M", "L", "XL"],
         description: "A stunning, ready-made Aso Ebi gown crafted from intricate lace. Popular in Nigerian ceremonies, this dress embodies elegance and cultural pride, ensuring you stand out."
+    },
+    {
+        id: "prod_11",
+        name: "Modern Adire Silk Kaftan",
+        price: 95000,
+        category: "Dresses",
+        images: ["product-11"],
+        colors: ["Indigo", "Maroon"],
+        sizes: ["One Size"],
+        description: "A beautiful fusion of traditional Nigerian Adire dyeing techniques and modern silk kaftan silhouette. Lightweight, comfortable, and effortlessly stylish."
+    },
+    {
+        id: "prod_12",
+        name: "Men's Grand Agbada Set",
+        price: 250000,
+        category: "Menswear",
+        images: ["product-12"],
+        colors: ["White", "Royal Blue", "Black"],
+        sizes: ["M", "L", "XL", "XXL"],
+        description: "Make a powerful statement with this grand Agbada set, a hallmark of Nigerian men's fashion. This three-piece outfit is exquisitely embroidered and tailored for a regal presence."
+    },
+    {
+        id: "prod_13",
+        name: "Cashmere Blend Scarf",
+        price: 45000,
+        category: "Accessories",
+        images: ["product-13"],
+        colors: ["Heather Grey", "Camel"],
+        sizes: ["One Size"],
+        description: "An ultra-soft and luxurious cashmere blend scarf. The perfect accessory to add a touch of warmth and class to any outfit."
+    },
+    {
+        id: "prod_14",
+        name: "Velvet Smoking Slippers",
+        price: 88000,
+        category: "Shoes",
+        images: ["product-14"],
+        colors: ["Burgundy", "Forest Green"],
+        sizes: ["40", "41", "42", "43", "44"],
+        description: "Sophisticated velvet slippers with a quilted satin lining. Ideal for formal events or adding a touch of dapper style to your evening wear."
     }
 ];
 
