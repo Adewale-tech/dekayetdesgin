@@ -1,13 +1,13 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useFormStatus } from 'react-dom';
 import { getStylingRecommendationsAction } from '@/app/actions';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Wand2 } from 'lucide-react';
-import { useEffect } from 'react';
+import { useEffect, useActionState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 
 const initialState = {
@@ -26,7 +26,7 @@ function SubmitButton() {
 }
 
 export default function AiStylingPage() {
-  const [state, formAction] = useFormState(getStylingRecommendationsAction, initialState as any);
+  const [state, formAction] = useActionState(getStylingRecommendationsAction, initialState as any);
   const { toast } = useToast();
 
   useEffect(() => {
