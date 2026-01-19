@@ -9,6 +9,7 @@ import Link from "next/link";
 import { products } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { useState } from "react";
+import { Skeleton } from "./ui/skeleton";
 
 export default function CartSheet() {
   const [cartItems, setCartItems] = useState(products.slice(0, 2)); // Dummy data
@@ -43,8 +44,8 @@ export default function CartSheet() {
                 const image = PlaceHolderImages.find(p => p.id === item.imageId);
                 return (
                   <div key={item.id} className="flex items-start gap-4">
-                    {image && (
-                      <div className="relative h-20 w-20 overflow-hidden rounded-md">
+                    <div className="relative h-20 w-20 overflow-hidden rounded-md bg-muted">
+                      {image ? (
                         <Image
                           src={image.imageUrl}
                           alt={item.name}
@@ -53,8 +54,8 @@ export default function CartSheet() {
                           className="object-cover"
                           data-ai-hint={image.imageHint}
                         />
-                      </div>
-                    )}
+                      ) : <Skeleton className="h-full w-full" />}
+                    </div>
                     <div className="flex-1">
                       <h3 className="font-medium">{item.name}</h3>
                       <p className="text-sm text-muted-foreground">

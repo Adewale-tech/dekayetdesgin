@@ -11,6 +11,7 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Badge } from "./ui/badge";
 import { ShoppingBag } from "lucide-react";
+import { Skeleton } from "./ui/skeleton";
 
 type QuickViewDialogProps = {
   product: Product;
@@ -27,7 +28,7 @@ export default function QuickViewDialog({ product }: QuickViewDialogProps) {
       <DialogContent className="sm:max-w-4xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-muted">
-                {image && (
+                {image ? (
                     <Image
                         src={image.imageUrl}
                         alt={product.name}
@@ -36,7 +37,7 @@ export default function QuickViewDialog({ product }: QuickViewDialogProps) {
                         sizes="(max-width: 768px) 90vw, 50vw"
                         data-ai-hint={image.imageHint}
                     />
-                )}
+                ) : <Skeleton className="h-full w-full" />}
             </div>
             <div className="space-y-6">
                 <DialogHeader>

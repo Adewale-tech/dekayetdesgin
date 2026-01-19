@@ -139,7 +139,9 @@ export default function DashboardPage() {
                     <React.Fragment key={course.id}>
                     {index > 0 && <Separator />}
                     <div className="flex flex-col sm:flex-row items-center gap-4">
-                        {image && <div className="relative h-24 w-full sm:h-20 sm:w-20 rounded-md overflow-hidden shrink-0"><Image src={image.imageUrl} alt={course.title} fill className="object-cover" data-ai-hint={image.imageHint}/></div>}
+                        <div className="relative h-24 w-full sm:h-20 sm:w-20 rounded-md overflow-hidden shrink-0 bg-muted">
+                            {image ? <Image src={image.imageUrl} alt={course.title} fill className="object-cover" data-ai-hint={image.imageHint}/> : <Skeleton className="h-full w-full" />}
+                        </div>
                         <div className="flex-1 w-full">
                             <h3 className="font-medium">{course.title}</h3>
                             <Progress value={course.progress} className="mt-2 h-2" />

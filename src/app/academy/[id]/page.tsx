@@ -6,6 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, PlayCircle } from "lucide-react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default function CourseDetailPage({ params }: { params: { id: string } }) {
   const course = courses.find((c) => c.id === params.id);
@@ -22,7 +23,7 @@ export default function CourseDetailPage({ params }: { params: { id: string } })
         <div className="lg:col-span-2 space-y-8">
           {/* Video Player */}
           <div className="aspect-video w-full bg-muted rounded-lg overflow-hidden relative">
-            {image && <Image src={image.imageUrl} alt={course.title} fill className="object-cover" data-ai-hint={image.imageHint} />}
+            {image ? <Image src={image.imageUrl} alt={course.title} fill className="object-cover" data-ai-hint={image.imageHint} /> : <Skeleton className="h-full w-full" />}
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                 <PlayCircle className="w-20 h-20 text-white/70 hover:text-white transition-colors cursor-pointer" />
             </div>
