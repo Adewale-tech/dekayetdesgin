@@ -11,6 +11,7 @@ const navLinks = [
   { href: '/shop', label: 'Shop' },
   { href: '/academy', label: 'Academy' },
   { href: '/ai-styling', label: 'AI Stylist' },
+  { href: '/virtual-try-on', label: 'Virtual Try-On' },
   { href: '/dashboard', label: 'Dashboard' },
 ];
 

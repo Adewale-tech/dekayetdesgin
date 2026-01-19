@@ -2,6 +2,7 @@
 
 import { getStylingRecommendations } from '@/ai/flows/ai-styling-tool';
 import { personalizedLearningPath } from '@/ai/flows/personalized-learning-path';
+import { virtualTryOn } from '@/ai/flows/virtual-try-on';
 import { z } from 'zod';
 
 const stylingSchema = z.object({
@@ -59,3 +60,32 @@ export async function personalizedLearningPathAction(prevState: any, formData: F
     return { message: 'An error occurred while generating your learning path.', errors: {}, data: null };
   }
 }
+
+const virtualTryOnSchema = z.object({
+    userImageDataUri: z.string(),
+    productImageUrl: z.string().url(),
+  });
+  
+  export async function virtualTryOnAction(prevState: any, formData: FormData) {
+      const validatedFields = virtualTryOnSchema.safeParse({
+          userImageDataUri: formData.get('userImageDataUri'),
+          productImageUrl: formData.get('productImageUrl'),
+      });
+  
+      if (!validatedFields.success) {
+          return {
+          message: 'Invalid input for virtual try-on.',
+          errors: validatedFields.error.flatten().fieldErrors,
+          data: null
+          };
+      }
+      
+      try {
+          const result = await virtualTryOn(validatedFields.data);
+          return { message: 'success', data: result, errors: {} };
+      } catch (error) {
+          console.error(error);
+          const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred.';
+          return { message: `An error occurred during virtual try-on: ${errorMessage}`, errors: {}, data: null };
+      }
+  }
