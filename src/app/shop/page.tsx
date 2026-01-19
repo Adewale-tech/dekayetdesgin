@@ -8,7 +8,7 @@ export default function ShopPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">Our Collection</h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Explore our curated selection of luxury fashion pieces.
+            Discover our exquisite collection of classy world dresses and popular Nigerian ready-made attire.
           </p>
         </div>
         

@@ -48,13 +48,13 @@ export type DashboardData = {
 export const products: Product[] = [
     {
         id: "prod_1",
-        name: "Flowing Silk Evening Gown",
+        name: "Exquisite Silk Evening Gown",
         price: 150000,
         category: "Dresses",
         images: ["product-1"],
         colors: ["Midnight Blue", "Ruby Red"],
         sizes: ["S", "M", "L"],
-        description: "An exquisite evening gown crafted from the finest mulberry silk. Its flowing silhouette and deep hue make it a timeless piece for any formal occasion."
+        description: "Command attention in this exquisite evening gown. Crafted from luxurious flowing silk, its elegant silhouette and rich color create a truly classy and timeless world-class dress for your most special occasions."
     },
     {
         id: "prod_2",
@@ -64,7 +64,7 @@ export const products: Product[] = [
         images: ["product-2"],
         colors: ["Charcoal"],
         sizes: ["S", "M", "L", "XL"],
-        description: "A perfectly tailored blazer in a versatile charcoal wool. Featuring a sharp cut and premium lining, it's an essential for a polished wardrobe."
+        description: "Experience sophistication with this perfectly tailored charcoal wool blazer. Featuring a sharp, modern cut and a premium lining, it's a versatile essential for a polished and classy wardrobe."
     },
     {
         id: "prod_3",
@@ -125,6 +125,26 @@ export const products: Product[] = [
         colors: ["Cream", "Black"],
         sizes: ["S", "M", "L", "XL"],
         description: "Flattering high-waisted trousers with a wide-leg cut. Made from a premium crepe fabric for a fluid, elegant movement."
+    },
+    {
+        id: "prod_9",
+        name: "Vibrant Ankara Print Midi Dress",
+        price: 68000,
+        category: "Dresses",
+        images: ["product-9"],
+        colors: ["Multi-color Print"],
+        sizes: ["S", "M", "L", "XL"],
+        description: "Celebrate Nigerian fashion with this vibrant ready-made Ankara print midi dress. A popular choice for its bold patterns and flattering fit, perfect for any celebration."
+    },
+    {
+        id: "prod_10",
+        name: "Elegant Lace Aso Ebi Gown",
+        price: 180000,
+        category: "Dresses",
+        images: ["product-10"],
+        colors: ["Royal Blue", "Gold"],
+        sizes: ["M", "L", "XL"],
+        description: "A stunning, ready-made Aso Ebi gown crafted from intricate lace. Popular in Nigerian ceremonies, this dress embodies elegance and cultural pride, ensuring you stand out."
     }
 ];
 
