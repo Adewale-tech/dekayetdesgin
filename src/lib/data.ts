@@ -254,7 +254,9 @@ export const courses: Course[] = [
 export const dashboardData: DashboardData = {
     activeCourses: [
         { id: "dash_course_1", title: "Introduction to Fashion Illustration", progress: 65, imageId: "course-1" },
-        { id: "dash_course_2", title: "The Business of Fashion", progress: 20, imageId: "course-6" },
+        { id: "dash_course_2", title: "Advanced Pattern Making & Draping", progress: 40, imageId: "course-2" },
+        { id: "dash_course_3", title: "Digital Fashion Design with Procreate", progress: 80, imageId: "course-5" },
+        { id: "dash_course_4", title: "The Business of Fashion", progress: 20, imageId: "course-6" }
     ],
     upcomingClasses: [
         { id: "class_1", title: "Live Q&A: Color Theory", date: addDays(new Date(), 2), time: "4:00 PM" },
