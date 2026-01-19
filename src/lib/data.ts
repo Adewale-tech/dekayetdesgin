@@ -48,143 +48,143 @@ export type DashboardData = {
 export const products: Product[] = [
     {
         id: "prod_1",
-        name: "Exquisite Silk Evening Gown",
-        price: 150000,
-        category: "Dresses",
+        name: "Royal Adire Silk Kaftan",
+        price: 95000,
+        category: "Kaftans",
         imageId: "product-1",
-        colors: ["Midnight Blue", "Ruby Red"],
-        sizes: ["S", "M", "L"],
-        description: "Command attention in this exquisite evening gown. Crafted from luxurious flowing silk, its elegant silhouette and rich color create a truly classy and timeless world-class dress for your most special occasions."
+        colors: ["Indigo", "Maroon"],
+        sizes: ["One Size"],
+        description: "Experience pure luxury with this flowing kaftan made from lustrous silk, featuring authentic hand-dyed Adire patterns from the heart of Yorubaland."
     },
     {
         id: "prod_2",
-        name: "Tailored Charcoal Wool Blazer",
-        price: 85000,
-        category: "Outerwear",
+        name: "Grand Aso-Oke Boubou",
+        price: 280000,
+        category: "Gowns",
         imageId: "product-2",
-        colors: ["Charcoal"],
-        sizes: ["S", "M", "L", "XL"],
-        description: "Experience sophistication with this perfectly tailored charcoal wool blazer. Featuring a sharp, modern cut and a premium lining, it's a versatile essential for a polished and classy wardrobe."
+        colors: ["Gold/Cream", "Silver/Blue"],
+        sizes: ["One Size"],
+        description: "A statement piece of artistry, this grand boubou is crafted from prestigious hand-woven Aso-Oke fabric, perfect for the most regal occasions."
     },
     {
         id: "prod_3",
-        name: "Luxury Leather Handbag",
-        price: 220000,
-        category: "Accessories",
-        imageId: "product-3",
-        colors: ["Cognac", "Black"],
-        sizes: ["One Size"],
-        description: "A statement handbag made from supple, full-grain Italian leather. Its structured design and gold-plated hardware exude sophistication."
-    },
-    {
-        id: "prod_4",
-        name: "Classic Gold-Accented Stilettos",
-        price: 65000,
-        category: "Shoes",
-        imageId: "product-4",
-        colors: ["Black", "Nude"],
-        sizes: ["38", "39", "40", "41"],
-        description: "Elevate any look with these classic stilettos. The elegant design is complemented by a subtle gold accent on the heel."
-    },
-    {
-        id: "prod_5",
-        name: "Chic Linen Jumpsuit",
-        price: 72000,
-        category: "Jumpsuits",
-        imageId: "product-5",
-        colors: ["Oatmeal", "White"],
-        sizes: ["S", "M", "L"],
-        description: "Effortless style meets comfort in this chic linen jumpsuit. Perfect for warm-weather events or a sophisticated day look."
-    },
-    {
-        id: "prod_6",
-        name: "Structured Trench Coat",
-        price: 110000,
-        category: "Outerwear",
-        imageId: "product-6",
-        colors: ["Beige", "Navy"],
-        sizes: ["S", "M", "L"],
-        description: "A modern take on the classic trench coat. Its structured silhouette and water-resistant fabric make it both stylish and practical."
-    },
-    {
-        id: "prod_7",
-        name: "Satin Slip Dress",
-        price: 58000,
-        category: "Dresses",
-        imageId: "product-7",
-        colors: ["Champagne", "Emerald Green"],
-        sizes: ["XS", "S", "M", "L"],
-        description: "A versatile satin slip dress that drapes beautifully on the body. Can be dressed up with heels or down with sneakers."
-    },
-    {
-        id: "prod_8",
-        name: "High-Waisted Tailored Trousers",
-        price: 75000,
-        category: "Trousers",
-        imageId: "product-8",
-        colors: ["Cream", "Black"],
-        sizes: ["S", "M", "L", "XL"],
-        description: "Flattering high-waisted trousers with a wide-leg cut. Made from a premium crepe fabric for a fluid, elegant movement."
-    },
-    {
-        id: "prod_9",
-        name: "Vibrant Ankara Print Midi Dress",
-        price: 68000,
-        category: "Dresses",
-        imageId: "product-9",
-        colors: ["Multi-color Print"],
-        sizes: ["S", "M", "L", "XL"],
-        description: "Celebrate Nigerian fashion with this vibrant ready-made Ankara print midi dress. A popular choice for its bold patterns and flattering fit, perfect for any celebration."
-    },
-    {
-        id: "prod_10",
-        name: "Elegant Lace Aso Ebi Gown",
-        price: 180000,
-        category: "Dresses",
-        imageId: "product-10",
-        colors: ["Royal Blue", "Gold"],
-        sizes: ["M", "L", "XL"],
-        description: "A stunning, ready-made Aso Ebi gown crafted from intricate lace. Popular in Nigerian ceremonies, this dress embodies elegance and cultural pride, ensuring you stand out."
-    },
-    {
-        id: "prod_11",
-        name: "Modern Adire Silk Kaftan",
-        price: 95000,
-        category: "Dresses",
-        imageId: "product-11",
-        colors: ["Indigo", "Maroon"],
-        sizes: ["One Size"],
-        description: "A beautiful fusion of traditional Nigerian Adire dyeing techniques and modern silk kaftan silhouette. Lightweight, comfortable, and effortlessly stylish."
-    },
-    {
-        id: "prod_12",
-        name: "Men's Grand Agbada Set",
+        name: "Embroidered Agbada Set",
         price: 250000,
         category: "Menswear",
-        imageId: "product-12",
+        imageId: "product-3",
         colors: ["White", "Royal Blue", "Black"],
         sizes: ["M", "L", "XL", "XXL"],
         description: "Make a powerful statement with this grand Agbada set, a hallmark of Nigerian men's fashion. This three-piece outfit is exquisitely embroidered and tailored for a regal presence."
     },
     {
-        id: "prod_13",
-        name: "Cashmere Blend Scarf",
+        id: "prod_4",
+        name: "Modern Lace Iro & Buba",
+        price: 180000,
+        category: "Sets",
+        imageId: "product-4",
+        colors: ["Blush Pink", "Teal Green"],
+        sizes: ["M", "L", "XL"],
+        description: "A contemporary twist on the classic Yoruba Iro and Buba set. Made with premium, intricate lace and tailored for a perfect, flattering fit."
+    },
+    {
+        id: "prod_5",
+        name: "Ankara Print Peplum Top",
         price: 45000,
+        category: "Tops",
+        imageId: "product-5",
+        colors: ["Multi-color Print"],
+        sizes: ["S", "M", "L"],
+        description: "A versatile and stylish peplum top made from vibrant, 100% cotton Ankara fabric. Easily pairs with a skirt or trousers for a chic look."
+    },
+    {
+        id: "prod_6",
+        name: "Ankara Flared Midi Dress",
+        price: 68000,
+        category: "Dresses",
+        imageId: "product-6",
+        colors: ["Multi-color Print"],
+        sizes: ["S", "M", "L", "XL"],
+        description: "Celebrate Nigerian fashion with this vibrant ready-made Ankara print midi dress. A popular choice for its bold patterns and flattering fit, perfect for any celebration."
+    },
+    {
+        id: "prod_7",
+        name: "Isiagu Velvet Tunic",
+        price: 110000,
+        category: "Menswear",
+        imageId: "product-7",
+        colors: ["Black", "Burgundy"],
+        sizes: ["M", "L", "XL"],
+        description: "Embody the pride of the Igbo culture with this luxurious velvet tunic, adorned with the iconic Isiagu (lion head) embroidery. A symbol of prestige and style."
+    },
+    {
+        id: "prod_8",
+        name: "Traditional Coral Bead Set",
+        price: 75000,
         category: "Accessories",
-        imageId: "product-13",
-        colors: ["Heather Grey", "Camel"],
+        imageId: "product-8",
+        colors: ["Coral Red"],
         sizes: ["One Size"],
-        description: "An ultra-soft and luxurious cashmere blend scarf. The perfect accessory to add a touch of warmth and class to any outfit."
+        description: "An essential accessory for Nigerian traditional wear. This authentic coral bead set includes a necklace and matching bracelet to complete your regal look."
+    },
+    {
+        id: "prod_9",
+        name: "Pre-Styled Auto Gele",
+        price: 35000,
+        category: "Accessories",
+        imageId: "product-9",
+        colors: ["Gold", "Silver", "Red"],
+        sizes: ["One Size"],
+        description: "Achieve the perfect Gele look in seconds! This pre-styled Auto Gele is expertly crafted for ease and elegance, saving you time without compromising on style."
+    },
+    {
+        id: "prod_10",
+        name: "Men's Senator Style Suit",
+        price: 85000,
+        category: "Menswear",
+        imageId: "product-10",
+        colors: ["Navy Blue", "Charcoal Grey"],
+        sizes: ["M", "L", "XL", "XXL"],
+        description: "The epitome of modern Nigerian menswear. This Senator style suit is tailored for a sharp, sophisticated silhouette, perfect for business or formal events."
+    },
+    {
+        id: "prod_11",
+        name: "Ankara Wide-Leg Trousers",
+        price: 52000,
+        category: "Trousers",
+        imageId: "product-11",
+        colors: ["Multi-color Print"],
+        sizes: ["S", "M", "L"],
+        description: "Stay on-trend with these comfortable and chic wide-leg trousers in a stunning Ankara print. Features a high-waist design for a flattering look."
+    },
+    {
+        id: "prod_12",
+        name: "Off-Shoulder Buba Gown",
+        price: 120000,
+        category: "Gowns",
+        imageId: "product-12",
+        colors: ["Emerald Green", "Royal Purple"],
+        sizes: ["S", "M", "L", "XL"],
+        description: "A glamorous fusion of tradition and trend. This elegant gown features a classic Buba sleeve design with a modern, alluring off-shoulder neckline."
+    },
+    {
+        id: "prod_13",
+        name: "Sequin Embellished Aso Ebi",
+        price: 220000,
+        category: "Gowns",
+        imageId: "product-13",
+        colors: ["Champagne Gold", "Rose Gold"],
+        sizes: ["S", "M", "L"],
+        description: "Dazzle at your next event with this breathtaking Aso Ebi gown. Lavishly embellished with sequins and tailored to perfection for a show-stopping entrance."
     },
     {
         id: "prod_14",
-        name: "Velvet Smoking Slippers",
-        price: 88000,
-        category: "Shoes",
+        name: "Classic Dashiki Shirt",
+        price: 30000,
+        category: "Tops",
         imageId: "product-14",
-        colors: ["Burgundy", "Forest Green"],
-        sizes: ["40", "41", "42", "43", "44"],
-        description: "Sophisticated velvet slippers with a quilted satin lining. Ideal for formal events or adding a touch of dapper style to your evening wear."
+        colors: ["Blue/Gold", "Black/White"],
+        sizes: ["M", "L", "XL"],
+        description: "A timeless and comfortable Dashiki shirt featuring the iconic Angelina print. A versatile piece for a casual, afrocentric look."
     }
 ];
 

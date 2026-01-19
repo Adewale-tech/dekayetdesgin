@@ -13,87 +13,87 @@
   },
   {
     "id": "product-1",
-    "description": "An exquisite evening gown",
-    "imageUrl": "https://images.unsplash.com/photo-1595240212351-ad7d72c8427f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxleHF1aXNpdGUlMjBldmVuaW5nJTIwZ293bnxlbnwwfHx8fDE3MjA0ODQxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "evening gown"
-  },
-  {
-    "id": "product-2",
-    "description": "A tailored charcoal wool blazer",
-    "imageUrl": "https://images.unsplash.com/photo-1594938384992-3b16270b2847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGFyY29hbCUyMGJhemVyfGVufDB8fHx8MTcyMDQ4Mzc0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "charcoal blazer"
-  },
-  {
-    "id": "product-3",
-    "description": "A luxury leather handbag",
-    "imageUrl": "https://images.unsplash.com/photo-1689844495793-ddcdd00e9482?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsZWF0aGVyJTIwaGFuZGJhZ3xlbnwwfHx8fDE3Njg4MTc2MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "leather handbag"
-  },
-  {
-    "id": "product-4",
-    "description": "Classic gold-accented stilettos",
-    "imageUrl": "https://images.unsplash.com/photo-1598528738936-c50861cc75a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnb2xkJTIwc3RpbGV0dG9zfGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "gold stilettos"
-  },
-  {
-    "id": "product-5",
-    "description": "A chic linen jumpsuit",
-    "imageUrl": "https://images.unsplash.com/photo-1712685884939-c0969ab2e758?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsaW5lbiUyMGp1bXBzdWl0fGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "linen jumpsuit"
-  },
-  {
-    "id": "product-6",
-    "description": "A structured trench coat",
-    "imageUrl": "https://images.unsplash.com/photo-1619603364904-c0498317e145?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dHJlbmNoJTIwY29hdHxlbnwwfHx8fDE3Njg3NDA5OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "trench coat"
-  },
-  {
-    "id": "product-7",
-    "description": "A satin slip dress",
-    "imageUrl": "https://images.unsplash.com/photo-1704775990154-b87562565d4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYXRpbiUyMGRyZXNzfGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "satin dress"
-  },
-  {
-    "id": "product-8",
-    "description": "High-waisted tailored trousers",
-    "imageUrl": "https://images.unsplash.com/photo-1655755933366-4fa97ec5e307?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0YWlsb3JlZCUyMHRyb3VzZXJzfGVufDB8fHx8MTc2ODgyMTM2OHww&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "tailored trousers"
-  },
-  {
-    "id": "product-9",
-    "description": "Vibrant Ankara print midi dress",
-    "imageUrl": "https://images.unsplash.com/photo-1623910878235-3c13c75b8f6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmthcmElMjBkcmVzc3xlbnwwfHx8fDE3MjA0ODM4MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "ankara dress"
-  },
-  {
-    "id": "product-10",
-    "description": "Elegant Lace Aso Ebi Gown",
-    "imageUrl": "https://images.unsplash.com/photo-1682855132623-a89539d09f7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhc28lMjBlYml8ZW58MHx8fHwxNzIwNDgzODU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "aso ebi"
-  },
-  {
-    "id": "product-11",
-    "description": "A modern adire silk kaftan",
+    "description": "Elegant Adire kaftan",
     "imageUrl": "https://images.unsplash.com/photo-1617181363668-5687752f7f13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuaWdlcmlhbiUyMGZhc2hpb258ZW58MHx8fHwxNzIyNDU4MjQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
     "imageHint": "adire kaftan"
   },
   {
-    "id": "product-12",
-    "description": "A men's grand agbada set",
+    "id": "product-2",
+    "description": "Aso-Oke Boubou",
+    "imageUrl": "https://images.unsplash.com/photo-1682855132623-a89539d09f7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhc28lMjBlYml8ZW58MHx8fHwxNzIwNDgzODU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "aso oke"
+  },
+  {
+    "id": "product-3",
+    "description": "Embroidered Agbada",
     "imageUrl": "https://images.unsplash.com/photo-1636597793455-a22a31b6b553?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZ2JhZGF8ZW58MHx8fHwxNzIyNDU4MzI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "agbada set"
+    "imageHint": "agbada"
+  },
+  {
+    "id": "product-4",
+    "description": "Lace Iro and Buba",
+    "imageUrl": "https://images.unsplash.com/photo-1631163488825-94364353f2a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxuaWdlcmlhbiUyMGxhY2UlMjBkcmVzc3xlbnwwfHx8fDE3MjI0OTQwODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "iro buba"
+  },
+  {
+    "id": "product-5",
+    "description": "Ankara Peplum Top",
+    "imageUrl": "https://images.unsplash.com/photo-1591871926203-d8c13f63901b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmthcmElMjB0b3B8ZW58MHx8fHwxNzIyNDk0MTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "ankara top"
+  },
+  {
+    "id": "product-6",
+    "description": "Ankara Skater Dress",
+    "imageUrl": "https://images.unsplash.com/photo-1623910878235-3c13c75b8f6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmthcmElMjBkcmVzc3xlbnwwfHx8fDE3MjA0ODM4MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "ankara dress"
+  },
+  {
+    "id": "product-7",
+    "description": "Isiagu Velvet Tunic",
+    "imageUrl": "https://images.unsplash.com/photo-1649987829864-14c6a6358110?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpc2lhZ3V8ZW58MHx8fHwxNzIyNDk0MjMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "isiagu tunic"
+  },
+  {
+    "id": "product-8",
+    "description": "Coral Necklace Set",
+    "imageUrl": "https://images.unsplash.com/photo-1643272186475-442b55789a74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuaWdlcmlhbiUyMGJlYWRzfGVufDB8fHx8fDE3MjI0OTQyODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "coral beads"
+  },
+  {
+    "id": "product-9",
+    "description": "Styled Gele",
+    "imageUrl": "https://images.unsplash.com/photo-1617136399434-55531464319c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnZWxlfGVufDB8fHx8fDE3MjI0OTQzMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "gele headtie"
+  },
+  {
+    "id": "product-10",
+    "description": "Men's Senator Suit",
+    "imageUrl": "https://images.unsplash.com/photo-1621838426029-71179afa2f56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuaWdlcmlhbiUyMG1lbnMlMjBzdWl0fGVufDB8fHx8fDE3MjI0OTQ0MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "senator suit"
+  },
+  {
+    "id": "product-11",
+    "description": "Ankara Wide-Leg Trousers",
+    "imageUrl": "https://images.unsplash.com/photo-1643272216505-1555519fb1d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmthcmElMjB0cm91c2Vyc3xlbnwwfHx8fDE3MjI0OTQ0NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "ankara trousers"
+  },
+  {
+    "id": "product-12",
+    "description": "Off-Shoulder Buba Gown",
+    "imageUrl": "https://images.unsplash.com/photo-1631163489334-a21535e07661?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuaWdlcmlhbiUyMHdvbWFuJTIwZHJlc3N8ZW58MHx8fHwxNzIyNDk0NTAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "buba gown"
   },
   {
     "id": "product-13",
-    "description": "A soft cashmere blend scarf",
-    "imageUrl": "https://images.unsplash.com/photo-1549495349-4a7b9a5c8264?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXNobWVyZSUyMHNjYXJmfGVufDB8fHx8fDE3MjI0NTg0MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "cashmere scarf"
+    "description": "Sequin Embellished Aso Ebi",
+    "imageUrl": "https://images.unsplash.com/photo-1595240212351-ad7d72c8427f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxleHF1aXNpdGUlMjBldmVuaW5nJTIwZ293bnxlbnwwfHx8fDE3MjA0ODQxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "sequin gown"
   },
   {
     "id": "product-14",
-    "description": "Velvet smoking slippers",
-    "imageUrl": "https://images.unsplash.com/photo-1617606002736-222476508974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2ZWx2ZXQlMjBzbGlwcGVyc3xlbnwwfHx8fDE3MjI0NTg0ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    "imageHint": "velvet slippers"
+    "description": "Classic Dashiki Shirt",
+    "imageUrl": "https://images.unsplash.com/photo-1590480922253-62e84e222c36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXNoaWtpJTIwc2hpcnR8ZW58MHx8fHwxNzIyNDk0NTU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "dashiki shirt"
   },
   {
     "id": "course-1",
