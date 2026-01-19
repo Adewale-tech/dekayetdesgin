@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { CalendarDays, BookOpen, ClipboardCheck } from "lucide-react";
 import { format } from "date-fns";
 import { Separator } from "@/components/ui/separator";
+import React from "react";
 
 export default function DashboardPage() {
   const { activeCourses, upcomingClasses, assignments } = dashboardData;
@@ -41,9 +42,9 @@ export default function DashboardPage() {
               {activeCourses.map((course, index) => {
                   const image = PlaceHolderImages.find(p => p.id === course.imageId);
                   return (
-                    <>
+                    <React.Fragment key={course.id}>
                     {index > 0 && <Separator />}
-                    <div key={course.id} className="flex flex-col sm:flex-row items-center gap-4">
+                    <div className="flex flex-col sm:flex-row items-center gap-4">
                         {image && <div className="relative h-24 w-full sm:h-20 sm:w-20 rounded-md overflow-hidden shrink-0"><Image src={image.imageUrl} alt={course.title} fill className="object-cover" data-ai-hint={image.imageHint}/></div>}
                         <div className="flex-1 w-full">
                             <h3 className="font-medium">{course.title}</h3>
@@ -51,7 +52,7 @@ export default function DashboardPage() {
                             <p className="text-sm text-muted-foreground mt-1">{course.progress}% complete</p>
                         </div>
                     </div>
-                    </>
+                    </React.Fragment>
                   )
                 })}
             </CardContent>
@@ -98,9 +99,9 @@ export default function DashboardPage() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                     {upcomingClasses.map((item, index) => (
-                        <>
+                        <React.Fragment key={item.id}>
                         {index > 0 && <Separator />}
-                        <div key={item.id} className="flex items-start gap-4">
+                        <div className="flex items-start gap-4">
                             <div className="flex flex-col items-center justify-center p-3 rounded-md bg-muted text-muted-foreground">
                                 <span className="text-sm font-bold">{format(item.date, 'MMM')}</span>
                                 <span className="text-2xl font-bold">{format(item.date, 'd')}</span>
@@ -110,7 +111,7 @@ export default function DashboardPage() {
                                 <p className="text-sm text-muted-foreground">{item.time}</p>
                             </div>
                         </div>
-                        </>
+                        </React.Fragment>
                     ))}
                 </CardContent>
             </Card>
