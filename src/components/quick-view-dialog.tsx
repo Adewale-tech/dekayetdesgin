@@ -17,7 +17,8 @@ type QuickViewDialogProps = {
 };
 
 export default function QuickViewDialog({ product }: QuickViewDialogProps) {
-  const image = PlaceHolderImages.find(p => p.id === product.images[0]);
+  const imageId = product.images && product.images.length > 0 ? product.images[0] : undefined;
+  const image = imageId ? PlaceHolderImages.find(p => p.id === imageId) : undefined;
 
   return (
     <Dialog>

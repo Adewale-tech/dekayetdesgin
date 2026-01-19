@@ -89,7 +89,9 @@ export default function VirtualTryOnPage() {
     context?.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
     
     const userImageDataUri = canvas.toDataURL('image/jpeg');
-    const productImage = PlaceHolderImages.find(p => p.id === product.images[0]);
+    
+    const imageId = product.images && product.images.length > 0 ? product.images[0] : undefined;
+    const productImage = imageId ? PlaceHolderImages.find(p => p.id === imageId) : undefined;
 
     if (!productImage) {
         toast({ title: 'Product image not found', variant: 'destructive' });
@@ -150,7 +152,8 @@ export default function VirtualTryOnPage() {
                     <ScrollArea className="h-[60vh]">
                         <div className="space-y-4 pr-4">
                         {products.map((product, index) => {
-                            const image = PlaceHolderImages.find(p => p.id === product.images[0]);
+                            const imageId = product.images && product.images.length > 0 ? product.images[0] : undefined;
+                            const image = imageId ? PlaceHolderImages.find(p => p.id === imageId) : undefined;
                             return (
                                 <div key={product.id}>
                                 <div  className="flex items-center gap-4">
