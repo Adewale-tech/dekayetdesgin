@@ -40,8 +40,7 @@ export default function CartSheet() {
           <>
             <div className="flex flex-1 flex-col gap-4 overflow-y-auto px-6 py-4">
               {cartItems.map((item) => {
-                const imageId = item.images && item.images.length > 0 ? item.images[0] : undefined;
-                const image = imageId ? PlaceHolderImages.find(p => p.id === imageId) : undefined;
+                const image = PlaceHolderImages.find(p => p.id === item.imageId);
                 return (
                   <div key={item.id} className="flex items-start gap-4">
                     {image && (

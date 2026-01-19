@@ -9,8 +9,7 @@ type ProductCardProps = {
 };
 
 export default function ProductCard({ product }: ProductCardProps) {
-  const imageId = product.images && product.images.length > 0 ? product.images[0] : undefined;
-  const image = imageId ? PlaceHolderImages.find(p => p.id === imageId) : undefined;
+  const image = PlaceHolderImages.find(p => p.id === product.imageId);
 
   return (
     <Card className="group overflow-hidden border-none shadow-none bg-transparent">

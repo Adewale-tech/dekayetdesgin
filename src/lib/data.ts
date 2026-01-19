@@ -5,7 +5,7 @@ export type Product = {
   name: string;
   price: number;
   category: string;
-  images: string[];
+  imageId: string;
   colors: string[];
   sizes: string[];
   description: string;
@@ -51,7 +51,7 @@ export const products: Product[] = [
         name: "Exquisite Silk Evening Gown",
         price: 150000,
         category: "Dresses",
-        images: ["product-1"],
+        imageId: "product-1",
         colors: ["Midnight Blue", "Ruby Red"],
         sizes: ["S", "M", "L"],
         description: "Command attention in this exquisite evening gown. Crafted from luxurious flowing silk, its elegant silhouette and rich color create a truly classy and timeless world-class dress for your most special occasions."
@@ -61,7 +61,7 @@ export const products: Product[] = [
         name: "Tailored Charcoal Wool Blazer",
         price: 85000,
         category: "Outerwear",
-        images: ["product-2"],
+        imageId: "product-2",
         colors: ["Charcoal"],
         sizes: ["S", "M", "L", "XL"],
         description: "Experience sophistication with this perfectly tailored charcoal wool blazer. Featuring a sharp, modern cut and a premium lining, it's a versatile essential for a polished and classy wardrobe."
@@ -71,7 +71,7 @@ export const products: Product[] = [
         name: "Luxury Leather Handbag",
         price: 220000,
         category: "Accessories",
-        images: ["product-3"],
+        imageId: "product-3",
         colors: ["Cognac", "Black"],
         sizes: ["One Size"],
         description: "A statement handbag made from supple, full-grain Italian leather. Its structured design and gold-plated hardware exude sophistication."
@@ -81,7 +81,7 @@ export const products: Product[] = [
         name: "Classic Gold-Accented Stilettos",
         price: 65000,
         category: "Shoes",
-        images: ["product-4"],
+        imageId: "product-4",
         colors: ["Black", "Nude"],
         sizes: ["38", "39", "40", "41"],
         description: "Elevate any look with these classic stilettos. The elegant design is complemented by a subtle gold accent on the heel."
@@ -91,7 +91,7 @@ export const products: Product[] = [
         name: "Chic Linen Jumpsuit",
         price: 72000,
         category: "Jumpsuits",
-        images: ["product-5"],
+        imageId: "product-5",
         colors: ["Oatmeal", "White"],
         sizes: ["S", "M", "L"],
         description: "Effortless style meets comfort in this chic linen jumpsuit. Perfect for warm-weather events or a sophisticated day look."
@@ -101,7 +101,7 @@ export const products: Product[] = [
         name: "Structured Trench Coat",
         price: 110000,
         category: "Outerwear",
-        images: ["product-6"],
+        imageId: "product-6",
         colors: ["Beige", "Navy"],
         sizes: ["S", "M", "L"],
         description: "A modern take on the classic trench coat. Its structured silhouette and water-resistant fabric make it both stylish and practical."
@@ -111,7 +111,7 @@ export const products: Product[] = [
         name: "Satin Slip Dress",
         price: 58000,
         category: "Dresses",
-        images: ["product-7"],
+        imageId: "product-7",
         colors: ["Champagne", "Emerald Green"],
         sizes: ["XS", "S", "M", "L"],
         description: "A versatile satin slip dress that drapes beautifully on the body. Can be dressed up with heels or down with sneakers."
@@ -121,7 +121,7 @@ export const products: Product[] = [
         name: "High-Waisted Tailored Trousers",
         price: 75000,
         category: "Trousers",
-        images: ["product-8"],
+        imageId: "product-8",
         colors: ["Cream", "Black"],
         sizes: ["S", "M", "L", "XL"],
         description: "Flattering high-waisted trousers with a wide-leg cut. Made from a premium crepe fabric for a fluid, elegant movement."
@@ -131,7 +131,7 @@ export const products: Product[] = [
         name: "Vibrant Ankara Print Midi Dress",
         price: 68000,
         category: "Dresses",
-        images: ["product-9"],
+        imageId: "product-9",
         colors: ["Multi-color Print"],
         sizes: ["S", "M", "L", "XL"],
         description: "Celebrate Nigerian fashion with this vibrant ready-made Ankara print midi dress. A popular choice for its bold patterns and flattering fit, perfect for any celebration."
@@ -141,7 +141,7 @@ export const products: Product[] = [
         name: "Elegant Lace Aso Ebi Gown",
         price: 180000,
         category: "Dresses",
-        images: ["product-10"],
+        imageId: "product-10",
         colors: ["Royal Blue", "Gold"],
         sizes: ["M", "L", "XL"],
         description: "A stunning, ready-made Aso Ebi gown crafted from intricate lace. Popular in Nigerian ceremonies, this dress embodies elegance and cultural pride, ensuring you stand out."
@@ -151,7 +151,7 @@ export const products: Product[] = [
         name: "Modern Adire Silk Kaftan",
         price: 95000,
         category: "Dresses",
-        images: ["product-11"],
+        imageId: "product-11",
         colors: ["Indigo", "Maroon"],
         sizes: ["One Size"],
         description: "A beautiful fusion of traditional Nigerian Adire dyeing techniques and modern silk kaftan silhouette. Lightweight, comfortable, and effortlessly stylish."
@@ -161,7 +161,7 @@ export const products: Product[] = [
         name: "Men's Grand Agbada Set",
         price: 250000,
         category: "Menswear",
-        images: ["product-12"],
+        imageId: "product-12",
         colors: ["White", "Royal Blue", "Black"],
         sizes: ["M", "L", "XL", "XXL"],
         description: "Make a powerful statement with this grand Agbada set, a hallmark of Nigerian men's fashion. This three-piece outfit is exquisitely embroidered and tailored for a regal presence."
@@ -171,7 +171,7 @@ export const products: Product[] = [
         name: "Cashmere Blend Scarf",
         price: 45000,
         category: "Accessories",
-        images: ["product-13"],
+        imageId: "product-13",
         colors: ["Heather Grey", "Camel"],
         sizes: ["One Size"],
         description: "An ultra-soft and luxurious cashmere blend scarf. The perfect accessory to add a touch of warmth and class to any outfit."
@@ -181,7 +181,7 @@ export const products: Product[] = [
         name: "Velvet Smoking Slippers",
         price: 88000,
         category: "Shoes",
-        images: ["product-14"],
+        imageId: "product-14",
         colors: ["Burgundy", "Forest Green"],
         sizes: ["40", "41", "42", "43", "44"],
         description: "Sophisticated velvet slippers with a quilted satin lining. Ideal for formal events or adding a touch of dapper style to your evening wear."
