@@ -1,148 +1,146 @@
-{
-  "placeholderImages": [
-    {
-      "id": "hero",
-      "description": "Elegant fashion runway show",
-      "imageUrl": "https://images.unsplash.com/photo-1635279474047-ab3cda78bbe8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmYXNoaW9uJTIwcnVud2F5fGVufDB8fHx8MTc2ODczOTA4MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fashion runway"
-    },
-    {
-      "id": "academy-hero",
-      "description": "Fashion designer sketching a dress",
-      "imageUrl": "https://images.unsplash.com/photo-1565206776249-a01813727c94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmYXNoaW9uJTIwZGVzaWduJTIwc2tldGNofGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fashion design sketch"
-    },
-    {
-      "id": "product-1",
-      "description": "An exquisite evening gown",
-      "imageUrl": "https://images.unsplash.com/photo-1595240212351-ad7d72c8427f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxleHF1aXNpdGUlMjBldmVuaW5nJTIwZ293bnxlbnwwfHx8fDE3MjA0ODQxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "evening gown"
-    },
-    {
-      "id": "product-2",
-      "description": "A tailored charcoal wool blazer",
-      "imageUrl": "https://images.unsplash.com/photo-1594938384992-3b16270b2847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGFyY29hbCUyMGJhemVyfGVufDB8fHx8MTcyMDQ4Mzc0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "charcoal blazer"
-    },
-    {
-      "id": "product-3",
-      "description": "A luxury leather handbag",
-      "imageUrl": "https://images.unsplash.com/photo-1689844495793-ddcdd00e9482?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsZWF0aGVyJTIwaGFuZGJhZ3xlbnwwfHx8fDE3Njg4MTc2MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "leather handbag"
-    },
-    {
-      "id": "product-4",
-      "description": "Classic gold-accented stilettos",
-      "imageUrl": "https://images.unsplash.com/photo-1598528738936-c50861cc75a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnb2xkJTIwc3RpbGV0dG9zfGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "gold stilettos"
-    },
-    {
-      "id": "product-5",
-      "description": "A chic linen jumpsuit",
-      "imageUrl": "https://images.unsplash.com/photo-1712685884939-c0969ab2e758?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsaW5lbiUyMGp1bXBzdWl0fGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "linen jumpsuit"
-    },
-    {
-      "id": "product-6",
-      "description": "A structured trench coat",
-      "imageUrl": "https://images.unsplash.com/photo-1619603364904-c0498317e145?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dHJlbmNoJTIwY29hdHxlbnwwfHx8fDE3Njg3NDA5OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "trench coat"
-    },
-    {
-      "id": "product-7",
-      "description": "A satin slip dress",
-      "imageUrl": "https://images.unsplash.com/photo-1704775990154-b87562565d4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYXRpbiUyMGRyZXNzfGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "satin dress"
-    },
-    {
-      "id": "product-8",
-      "description": "High-waisted tailored trousers",
-      "imageUrl": "https://images.unsplash.com/photo-1655755933366-4fa97ec5e307?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0YWlsb3JlZCUyMHRyb3VzZXJzfGVufDB8fHx8MTc2ODgyMTM2OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "tailored trousers"
-    },
-    {
-      "id": "product-9",
-      "description": "Vibrant Ankara print midi dress",
-      "imageUrl": "https://images.unsplash.com/photo-1623910878235-3c13c75b8f6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmthcmElMjBkcmVzc3xlbnwwfHx8fDE3MjA0ODM4MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ankara dress"
-    },
-    {
-      "id": "product-10",
-      "description": "Elegant Lace Aso Ebi Gown",
-      "imageUrl": "https://images.unsplash.com/photo-1682855132623-a89539d09f7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhc28lMjBlYml8ZW58MHx8fHwxNzIwNDgzODU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "aso ebi"
-    },
-    {
-      "id": "product-11",
-      "description": "A modern adire silk kaftan",
-      "imageUrl": "https://images.unsplash.com/photo-1617181363668-5687752f7f13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuaWdlcmlhbiUyMGZhc2hpb258ZW58MHx8fHwxNzIyNDU4MjQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "adire kaftan"
-    },
-    {
-      "id": "product-12",
-      "description": "A men's grand agbada set",
-      "imageUrl": "https://images.unsplash.com/photo-1636597793455-a22a31b6b553?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZ2JhZGF8ZW58MHx8fHwxNzIyNDU4MzI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "agbada set"
-    },
-    {
-      "id": "product-13",
-      "description": "A soft cashmere blend scarf",
-      "imageUrl": "https://images.unsplash.com/photo-1549495349-4a7b9a5c8264?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXNobWVyZSUyMHNjYXJmfGVufDB8fHx8fDE3MjI0NTg0MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cashmere scarf"
-    },
-    {
-      "id": "product-14",
-      "description": "Velvet smoking slippers",
-      "imageUrl": "https://images.unsplash.com/photo-1617606002736-222476508974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2ZWx2ZXQlMjBzbGlwcGVyc3xlbnwwfHx8fDE3MjI0NTg0ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "velvet slippers"
-    },
-    {
-      "id": "course-1",
-      "description": "Person learning fashion illustration",
-      "imageUrl": "https://images.unsplash.com/photo-1557777586-f6682739fcf3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwaWxsdXN0cmF0aW9ufGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fashion illustration"
-    },
-    {
-      "id": "course-2",
-      "description": "Sewing machine with fabric",
-      "imageUrl": "https://images.unsplash.com/photo-1673786586360-19e8f8acb53f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzZXdpbmclMjBtYWNoaW5lfGVufDB8fHx8MTc2ODczMDQxMXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "sewing machine"
-    },
-    {
-      "id": "course-3",
-      "description": "Textiles and fabric swatches",
-      "imageUrl": "https://images.unsplash.com/photo-1731504801830-5b14ac73d7ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYWJyaWMlMjBzd2F0Y2hlc3xlbnwwfHx8fDE3Njg4MjEwODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fabric swatches"
-    },
-    {
-      "id": "course-4",
-      "description": "Mannequin with a half-finished dress",
-      "imageUrl": "https://images.unsplash.com/photo-1639678699930-69eb40fc3c6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYXNoaW9uJTIwbWFubmVxdWlufGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fashion mannequin"
-    },
-    {
-      "id": "course-5",
-      "description": "Close up of digital fashion design software",
-      "imageUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaWdpdGFsJTIwZGVzaWdufGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "digital design"
-    },
-    {
-      "id": "course-6",
-      "description": "A mood board for a fashion collection",
-      "imageUrl": "https://images.unsplash.com/photo-1736281059263-316476b5e8e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmYXNoaW9uJTIwbW9vZGJvYXJkfGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fashion moodboard"
-    },
-    {
-      "id": "avatar-1",
-      "description": "Portrait of a fashion instructor",
-      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2ODc2MDg2NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
-    },
-    {
-      "id": "avatar-2",
-      "description": "Portrait of another fashion instructor",
-      "imageUrl": "https://images.unsplash.com/photo-1594672830234-ba4cfe1202dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY4Nzg2NzU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
-    }
-  ]
-}
+[
+  {
+    "id": "hero",
+    "description": "Elegant fashion runway show",
+    "imageUrl": "https://images.unsplash.com/photo-1635279474047-ab3cda78bbe8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmYXNoaW9uJTIwcnVud2F5fGVufDB8fHx8MTc2ODczOTA4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "fashion runway"
+  },
+  {
+    "id": "academy-hero",
+    "description": "Fashion designer sketching a dress",
+    "imageUrl": "https://images.unsplash.com/photo-1565206776249-a01813727c94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmYXNoaW9uJTIwZGVzaWduJTIwc2tldGNofGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "fashion design sketch"
+  },
+  {
+    "id": "product-1",
+    "description": "An exquisite evening gown",
+    "imageUrl": "https://images.unsplash.com/photo-1595240212351-ad7d72c8427f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxleHF1aXNpdGUlMjBldmVuaW5nJTIwZ293bnxlbnwwfHx8fDE3MjA0ODQxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "evening gown"
+  },
+  {
+    "id": "product-2",
+    "description": "A tailored charcoal wool blazer",
+    "imageUrl": "https://images.unsplash.com/photo-1594938384992-3b16270b2847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGFyY29hbCUyMGJhemVyfGVufDB8fHx8MTcyMDQ4Mzc0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "charcoal blazer"
+  },
+  {
+    "id": "product-3",
+    "description": "A luxury leather handbag",
+    "imageUrl": "https://images.unsplash.com/photo-1689844495793-ddcdd00e9482?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsZWF0aGVyJTIwaGFuZGJhZ3xlbnwwfHx8fDE3Njg4MTc2MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "leather handbag"
+  },
+  {
+    "id": "product-4",
+    "description": "Classic gold-accented stilettos",
+    "imageUrl": "https://images.unsplash.com/photo-1598528738936-c50861cc75a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnb2xkJTIwc3RpbGV0dG9zfGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "gold stilettos"
+  },
+  {
+    "id": "product-5",
+    "description": "A chic linen jumpsuit",
+    "imageUrl": "https://images.unsplash.com/photo-1712685884939-c0969ab2e758?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsaW5lbiUyMGp1bXBzdWl0fGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "linen jumpsuit"
+  },
+  {
+    "id": "product-6",
+    "description": "A structured trench coat",
+    "imageUrl": "https://images.unsplash.com/photo-1619603364904-c0498317e145?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dHJlbmNoJTIwY29hdHxlbnwwfHx8fDE3Njg3NDA5OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "trench coat"
+  },
+  {
+    "id": "product-7",
+    "description": "A satin slip dress",
+    "imageUrl": "https://images.unsplash.com/photo-1704775990154-b87562565d4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYXRpbiUyMGRyZXNzfGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "satin dress"
+  },
+  {
+    "id": "product-8",
+    "description": "High-waisted tailored trousers",
+    "imageUrl": "https://images.unsplash.com/photo-1655755933366-4fa97ec5e307?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0YWlsb3JlZCUyMHRyb3VzZXJzfGVufDB8fHx8MTc2ODgyMTM2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "tailored trousers"
+  },
+  {
+    "id": "product-9",
+    "description": "Vibrant Ankara print midi dress",
+    "imageUrl": "https://images.unsplash.com/photo-1623910878235-3c13c75b8f6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmthcmElMjBkcmVzc3xlbnwwfHx8fDE3MjA0ODM4MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "ankara dress"
+  },
+  {
+    "id": "product-10",
+    "description": "Elegant Lace Aso Ebi Gown",
+    "imageUrl": "https://images.unsplash.com/photo-1682855132623-a89539d09f7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhc28lMjBlYml8ZW58MHx8fHwxNzIwNDgzODU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "aso ebi"
+  },
+  {
+    "id": "product-11",
+    "description": "A modern adire silk kaftan",
+    "imageUrl": "https://images.unsplash.com/photo-1617181363668-5687752f7f13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuaWdlcmlhbiUyMGZhc2hpb258ZW58MHx8fHwxNzIyNDU4MjQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "adire kaftan"
+  },
+  {
+    "id": "product-12",
+    "description": "A men's grand agbada set",
+    "imageUrl": "https://images.unsplash.com/photo-1636597793455-a22a31b6b553?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZ2JhZGF8ZW58MHx8fHwxNzIyNDU4MzI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "agbada set"
+  },
+  {
+    "id": "product-13",
+    "description": "A soft cashmere blend scarf",
+    "imageUrl": "https://images.unsplash.com/photo-1549495349-4a7b9a5c8264?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXNobWVyZSUyMHNjYXJmfGVufDB8fHx8fDE3MjI0NTg0MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "cashmere scarf"
+  },
+  {
+    "id": "product-14",
+    "description": "Velvet smoking slippers",
+    "imageUrl": "https://images.unsplash.com/photo-1617606002736-222476508974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2ZWx2ZXQlMjBzbGlwcGVyc3xlbnwwfHx8fDE3MjI0NTg0ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "velvet slippers"
+  },
+  {
+    "id": "course-1",
+    "description": "Person learning fashion illustration",
+    "imageUrl": "https://images.unsplash.com/photo-1557777586-f6682739fcf3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwaWxsdXN0cmF0aW9ufGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "fashion illustration"
+  },
+  {
+    "id": "course-2",
+    "description": "Sewing machine with fabric",
+    "imageUrl": "https://images.unsplash.com/photo-1673786586360-19e8f8acb53f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzZXdpbmclMjBtYWNoaW5lfGVufDB8fHx8MTc2ODczMDQxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "sewing machine"
+  },
+  {
+    "id": "course-3",
+    "description": "Textiles and fabric swatches",
+    "imageUrl": "https://images.unsplash.com/photo-1731504801830-5b14ac73d7ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYWJyaWMlMjBzd2F0Y2hlc3xlbnwwfHx8fDE3Njg4MjEwODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "fabric swatches"
+  },
+  {
+    "id": "course-4",
+    "description": "Mannequin with a half-finished dress",
+    "imageUrl": "https://images.unsplash.com/photo-1639678699930-69eb40fc3c6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYXNoaW9uJTIwbWFubmVxdWlufGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "fashion mannequin"
+  },
+  {
+    "id": "course-5",
+    "description": "Close up of digital fashion design software",
+    "imageUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaWdpdGFsJTIwZGVzaWdufGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "digital design"
+  },
+  {
+    "id": "course-6",
+    "description": "A mood board for a fashion collection",
+    "imageUrl": "https://images.unsplash.com/photo-1736281059263-316476b5e8e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmYXNoaW9uJTIwbW9vZGJvYXJkfGVufDB8fHx8MTc2ODgzNDg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "fashion moodboard"
+  },
+  {
+    "id": "avatar-1",
+    "description": "Portrait of a fashion instructor",
+    "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2ODc2MDg2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "woman portrait"
+  },
+  {
+    "id": "avatar-2",
+    "description": "Portrait of another fashion instructor",
+    "imageUrl": "https://images.unsplash.com/photo-1594672830234-ba4cfe1202dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY4Nzg2NzU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "imageHint": "man portrait"
+  }
+]
