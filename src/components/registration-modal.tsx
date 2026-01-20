@@ -9,7 +9,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
 import { submitRegistration, type RegistrationData } from '@/lib/firebase';
-import { Loader2 } from 'lucide-react';
+import { Loader2, CheckCircle, XCircle } from 'lucide-react';
 
 interface RegistrationModalProps {
     isOpen: boolean;
@@ -18,6 +18,9 @@ interface RegistrationModalProps {
     courseTitle: string;
     coursePrice: number;
 }
+
+// Email validation regex
+const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 export default function RegistrationModal({
     isOpen,
@@ -28,6 +31,8 @@ export default function RegistrationModal({
 }: RegistrationModalProps) {
     const { toast } = useToast();
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [emailError, setEmailError] = useState<string | null>(null);
+    const [emailValid, setEmailValid] = useState(false);
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -40,6 +45,20 @@ export default function RegistrationModal({
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
+
+        // Email validation
+        if (name === 'email') {
+            if (value === '') {
+                setEmailError(null);
+                setEmailValid(false);
+            } else if (!EMAIL_REGEX.test(value)) {
+                setEmailError('Please enter a valid email address');
+                setEmailValid(false);
+            } else {
+                setEmailError(null);
+                setEmailValid(true);
+            }
+        }
     };
 
     const handleSelectChange = (name: string, value: string) => {
@@ -48,6 +67,17 @@ export default function RegistrationModal({
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        // Validate email before submission
+        if (!EMAIL_REGEX.test(formData.email)) {
+            setEmailError('Please enter a valid email address');
+            toast({
+                title: "Invalid Email",
+                description: "Please enter a valid email address before submitting.",
+                variant: "destructive",
+            });
+            return;
+        }
 
         if (!formData.deliveryMethod || !formData.experienceLevel) {
             toast({
@@ -91,6 +121,8 @@ export default function RegistrationModal({
                     experienceLevel: '',
                     careerGoals: '',
                 });
+                setEmailValid(false);
+                setEmailError(null);
                 onClose();
             } else {
                 throw new Error(result.error);
@@ -107,6 +139,7 @@ export default function RegistrationModal({
     };
 
     const formatPrice = (price: number) => {
+        if (price === 0) return 'Program Inquiry';
         return new Intl.NumberFormat('en-NG', {
             style: 'currency',
             currency: 'NGN',
@@ -117,8 +150,8 @@ export default function RegistrationModal({
 
     return (
         <Dialog open={isOpen} onOpenChange={onClose}>
-            <DialogContent className="sm:max-w-[500px] bg-[#1a1a2e] border-[#D4AF37]/30 text-white">
-                <DialogHeader>
+            <DialogContent className="sm:max-w-[500px] max-h-[90vh] overflow-y-auto bg-[#1a1a2e] border-[#D4AF37]/30 text-white">
+                <DialogHeader className="sticky top-0 bg-[#1a1a2e] pb-4 z-10">
                     <DialogTitle className="text-2xl font-serif text-white">Apply for Admission</DialogTitle>
                     <DialogDescription className="text-gray-300">
                         <span className="font-semibold text-white">{courseTitle}</span>
@@ -126,7 +159,7 @@ export default function RegistrationModal({
                     </DialogDescription>
                 </DialogHeader>
 
-                <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+                <form onSubmit={handleSubmit} className="space-y-4">
                     {/* Full Name */}
                     <div className="space-y-2">
                         <Label htmlFor="fullName" className="text-gray-200">Full Name *</Label>
@@ -141,19 +174,36 @@ export default function RegistrationModal({
                         />
                     </div>
 
-                    {/* Email */}
+                    {/* Email with Validation */}
                     <div className="space-y-2">
                         <Label htmlFor="email" className="text-gray-200">Email Address *</Label>
-                        <Input
-                            id="email"
-                            name="email"
-                            type="email"
-                            value={formData.email}
-                            onChange={handleInputChange}
-                            required
-                            placeholder="your.email@example.com"
-                            className="bg-[#2C2C2C] border-gray-600 text-white placeholder:text-gray-400 focus:border-[#D4AF37]"
-                        />
+                        <div className="relative">
+                            <Input
+                                id="email"
+                                name="email"
+                                type="email"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                required
+                                placeholder="your.email@example.com"
+                                className={`bg-[#2C2C2C] border-gray-600 text-white placeholder:text-gray-400 pr-10 ${emailError ? 'border-red-500 focus:border-red-500' :
+                                        emailValid ? 'border-green-500 focus:border-green-500' : 'focus:border-[#D4AF37]'
+                                    }`}
+                            />
+                            {/* Validation Icon */}
+                            {formData.email && (
+                                <div className="absolute right-3 top-1/2 -translate-y-1/2">
+                                    {emailValid ? (
+                                        <CheckCircle className="w-5 h-5 text-green-500" />
+                                    ) : (
+                                        <XCircle className="w-5 h-5 text-red-500" />
+                                    )}
+                                </div>
+                            )}
+                        </div>
+                        {emailError && (
+                            <p className="text-sm text-red-400">{emailError}</p>
+                        )}
                     </div>
 
                     {/* Phone */}
@@ -215,20 +265,22 @@ export default function RegistrationModal({
                     </div>
 
                     {/* Submit Button */}
-                    <Button
-                        type="submit"
-                        disabled={isSubmitting}
-                        className="w-full bg-[#D4AF37] hover:bg-[#B8962E] text-white font-semibold py-3 transition-all duration-300"
-                    >
-                        {isSubmitting ? (
-                            <>
-                                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                                Submitting...
-                            </>
-                        ) : (
-                            'Submit Application'
-                        )}
-                    </Button>
+                    <div className="pt-4 pb-2">
+                        <Button
+                            type="submit"
+                            disabled={isSubmitting || !emailValid}
+                            className="w-full bg-[#D4AF37] hover:bg-[#B8962E] text-white font-semibold py-3 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                            {isSubmitting ? (
+                                <>
+                                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                                    Submitting...
+                                </>
+                            ) : (
+                                'Submit Application'
+                            )}
+                        </Button>
+                    </div>
                 </form>
             </DialogContent>
         </Dialog>
