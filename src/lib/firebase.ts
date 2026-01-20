@@ -6,18 +6,18 @@ import {
     getFirestore,
     collection,
     addDoc,
-    Firestore,
-    connectFirestoreEmulator
+    Firestore
 } from 'firebase/firestore';
 
-// Firebase configuration from environment variables
+// Firebase configuration - uses env vars with fallback to hardcoded values
+// This ensures the app works both locally and in production
 const firebaseConfig = {
-    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY || '',
-    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN || '',
-    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || '',
-    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET || '',
-    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || '',
-    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID || '',
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY || 'AIzaSyCe1iSJWnsBXwyVsP0x5FRyPmUPaNFBDN8',
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN || 'studio-1129591673-c71d7.firebaseapp.com',
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || 'studio-1129591673-c71d7',
+    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET || 'studio-1129591673-c71d7.firebasestorage.app',
+    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || '750437685627',
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID || '1:750437685627:web:260685e1a6cf44932605de',
 };
 
 // Singleton instances
@@ -35,15 +35,6 @@ function getFirebaseApp(): FirebaseApp {
         return firebaseApp;
     }
 
-    // Validate config
-    if (!firebaseConfig.apiKey || !firebaseConfig.projectId) {
-        console.error('Firebase config missing:', {
-            hasApiKey: !!firebaseConfig.apiKey,
-            hasProjectId: !!firebaseConfig.projectId,
-        });
-        throw new Error('Firebase configuration is missing. Please check .env.local file.');
-    }
-
     console.log('Initializing Firebase with project:', firebaseConfig.projectId);
     firebaseApp = initializeApp(firebaseConfig);
     return firebaseApp;
@@ -57,7 +48,7 @@ function getFirestoreInstance(): Firestore {
 
     const app = getFirebaseApp();
     firestoreDb = getFirestore(app);
-    console.log('Firestore connected to project:', firebaseConfig.projectId);
+    console.log('Firestore connected');
     return firestoreDb;
 }
 
@@ -79,15 +70,13 @@ export async function submitRegistration(
     data: RegistrationData
 ): Promise<{ success: boolean; id?: string; error?: string }> {
 
-    console.log('=== Starting Registration Submission ===');
-    console.log('Course:', data.courseTitle);
-    console.log('Email:', data.email);
+    console.log('Submitting registration for:', data.email);
 
     try {
         // Get Firestore instance
         const db = getFirestoreInstance();
 
-        // Prepare document data (convert Date to ISO string for Firestore)
+        // Prepare document data
         const docData = {
             fullName: data.fullName,
             email: data.email,
@@ -102,14 +91,11 @@ export async function submitRegistration(
             status: 'pending',
         };
 
-        console.log('Attempting to save to Firestore...');
-
         // Add document to registrations collection
         const registrationsRef = collection(db, 'registrations');
         const docRef = await addDoc(registrationsRef, docData);
 
-        console.log('=== Registration Saved Successfully ===');
-        console.log('Document ID:', docRef.id);
+        console.log('Registration saved with ID:', docRef.id);
 
         return {
             success: true,
@@ -117,21 +103,16 @@ export async function submitRegistration(
         };
 
     } catch (error: any) {
-        console.error('=== Registration Failed ===');
-        console.error('Error Type:', error?.name);
-        console.error('Error Code:', error?.code);
-        console.error('Error Message:', error?.message);
-        console.error('Full Error:', error);
+        console.error('Firebase Error:', error?.code || error?.message || error);
 
-        // Return specific error messages based on error code
-        let errorMessage = 'Failed to submit registration. Please try again.';
+        let errorMessage = 'Failed to submit. Please try again.';
 
         if (error?.code === 'permission-denied') {
-            errorMessage = 'Access denied. Firestore security rules need to allow writes. Please update Firestore rules in Firebase Console.';
+            errorMessage = 'Database access denied. Please update Firestore security rules in Firebase Console to allow writes.';
         } else if (error?.code === 'unavailable') {
-            errorMessage = 'Database unavailable. Please check your internet connection.';
+            errorMessage = 'Database unavailable. Check your internet connection.';
         } else if (error?.code === 'not-found') {
-            errorMessage = 'Database not found. Please create Firestore database in Firebase Console.';
+            errorMessage = 'Database not found. Create Firestore database in Firebase Console first.';
         } else if (error?.message) {
             errorMessage = error.message;
         }
