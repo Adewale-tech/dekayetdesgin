@@ -127,10 +127,11 @@ export default function RegistrationModal({
             } else {
                 throw new Error(result.error);
             }
-        } catch (error) {
+        } catch (error: any) {
+            console.error('Registration error:', error);
             toast({
                 title: "Submission Failed",
-                description: "There was an error submitting your application. Please try again.",
+                description: error?.message || "There was an error submitting your application. Please try again.",
                 variant: "destructive",
             });
         } finally {
@@ -187,7 +188,7 @@ export default function RegistrationModal({
                                 required
                                 placeholder="your.email@example.com"
                                 className={`bg-[#2C2C2C] border-gray-600 text-white placeholder:text-gray-400 pr-10 ${emailError ? 'border-red-500 focus:border-red-500' :
-                                        emailValid ? 'border-green-500 focus:border-green-500' : 'focus:border-[#D4AF37]'
+                                    emailValid ? 'border-green-500 focus:border-green-500' : 'focus:border-[#D4AF37]'
                                     }`}
                             />
                             {/* Validation Icon */}
