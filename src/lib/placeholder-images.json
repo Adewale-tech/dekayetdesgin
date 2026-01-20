@@ -7,9 +7,9 @@
   },
   {
     "id": "academy-hero",
-    "description": "A fashion designer's desk with sketches and fabric swatches",
-    "imageUrl": "https://picsum.photos/seed/fashionstudio/1920/1080",
-    "imageHint": "fashion studio"
+    "description": "Professional high-end fashion design atelier with mannequins and fabric",
+    "imageUrl": "https://picsum.photos/seed/luxuryatelier/1920/1080",
+    "imageHint": "fashion atelier studio"
   },
   {
     "id": "product-1",

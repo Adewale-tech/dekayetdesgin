@@ -10,8 +10,8 @@ import CartSheet from './cart-sheet';
 const navLinks = [
   { href: '/shop', label: 'Shop' },
   { href: '/academy', label: 'Academy' },
+  { href: '/about', label: 'About' },
   { href: '/ai-styling', label: 'AI Stylist' },
-  { href: '/virtual-try-on', label: 'Virtual Try-On' },
   { href: '/dashboard', label: 'Dashboard' },
 ];
 
@@ -24,7 +24,7 @@ export default function Header() {
         <Link href="/" className="font-headline text-2xl font-bold tracking-tight">
           Dekayet Designs
         </Link>
-        
+
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="text-sm font-medium text-foreground/70 transition-colors hover:text-foreground">
@@ -35,7 +35,7 @@ export default function Header() {
 
         <div className="flex items-center gap-2">
           <CartSheet />
-          
+
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="ghost" size="icon">
