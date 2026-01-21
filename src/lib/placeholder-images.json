@@ -2,145 +2,145 @@
   {
     "id": "hero",
     "description": "Elegant fashion runway show with diverse models",
-    "imageUrl": "https://picsum.photos/seed/fashionrunway/1920/1080",
+    "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80",
     "imageHint": "fashion runway"
   },
   {
     "id": "academy-hero",
     "description": "Professional high-end fashion design atelier with mannequins and fabric",
-    "imageUrl": "https://picsum.photos/seed/luxuryatelier/1920/1080",
+    "imageUrl": "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1920&q=80",
     "imageHint": "fashion atelier studio"
   },
   {
     "id": "product-1",
     "description": "Woman in a royal blue and gold Adire silk kaftan",
-    "imageUrl": "https://picsum.photos/seed/kaftan1/800/1000",
-    "imageHint": "adire kaftan"
+    "imageUrl": "https://images.unsplash.com/photo-1590735213920-68192a487bc2?w=800&q=80",
+    "imageHint": "african kaftan dress"
   },
   {
     "id": "product-2",
     "description": "Woman in a grand, hand-woven Aso-Oke boubou for a wedding",
-    "imageUrl": "https://picsum.photos/seed/asooke2/800/1000",
-    "imageHint": "aso oke"
+    "imageUrl": "https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?w=800&q=80",
+    "imageHint": "african wedding dress"
   },
   {
     "id": "product-3",
     "description": "Man wearing a white, intricately embroidered Agbada set",
-    "imageUrl": "https://picsum.photos/seed/agbada3/800/1000",
-    "imageHint": "agbada"
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&q=80",
+    "imageHint": "african man traditional"
   },
   {
     "id": "product-4",
     "description": "Woman in a modern pink lace Iro and Buba set",
-    "imageUrl": "https://picsum.photos/seed/irobuba4/800/1000",
-    "imageHint": "iro buba"
+    "imageUrl": "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=800&q=80",
+    "imageHint": "african lace dress"
   },
   {
     "id": "product-5",
     "description": "Woman smiling in a colorful Ankara print peplum top",
-    "imageUrl": "https://picsum.photos/seed/ankara5/800/1000",
-    "imageHint": "ankara top"
+    "imageUrl": "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=800&q=80",
+    "imageHint": "ankara print fashion"
   },
   {
     "id": "product-6",
     "description": "Woman in a vibrant, flared Ankara midi dress",
-    "imageUrl": "https://picsum.photos/seed/ankaradress6/800/1000",
-    "imageHint": "ankara dress"
+    "imageUrl": "https://images.unsplash.com/photo-1617922001439-4a2e6562f328?w=800&q=80",
+    "imageHint": "african print dress"
   },
   {
     "id": "product-7",
     "description": "Man in a black velvet Isiagu tunic with gold lion head embroidery",
-    "imageUrl": "https://picsum.photos/seed/isiagu7/800/1000",
-    "imageHint": "isiagu tunic"
+    "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    "imageHint": "african man formal"
   },
   {
     "id": "product-8",
     "description": "Close-up of a traditional Nigerian coral bead necklace set",
-    "imageUrl": "https://picsum.photos/seed/beads8/800/1000",
-    "imageHint": "coral beads"
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
+    "imageHint": "coral beads jewelry"
   },
   {
     "id": "product-9",
     "description": "Woman wearing an elegant, pre-styled golden Auto Gele",
-    "imageUrl": "https://picsum.photos/seed/gele9/800/1000",
-    "imageHint": "gele headtie"
+    "imageUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
+    "imageHint": "african headwrap"
   },
   {
     "id": "product-10",
     "description": "Man in a sharp, tailored navy blue Senator style suit",
-    "imageUrl": "https://picsum.photos/seed/senator10/800/1000",
-    "imageHint": "senator suit"
+    "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    "imageHint": "african man suit"
   },
   {
     "id": "product-11",
     "description": "Woman wearing stylish, high-waisted Ankara wide-leg trousers",
-    "imageUrl": "https://picsum.photos/seed/trousers11/800/1000",
-    "imageHint": "ankara trousers"
+    "imageUrl": "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80",
+    "imageHint": "african fashion trousers"
   },
   {
     "id": "product-12",
     "description": "Woman in a glamorous off-shoulder Buba gown in emerald green",
-    "imageUrl": "https://picsum.photos/seed/gown12/800/1000",
-    "imageHint": "buba gown"
+    "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80",
+    "imageHint": "elegant evening gown"
   },
   {
     "id": "product-13",
     "description": "Stunning sequin-embellished Aso Ebi gown in champagne gold",
-    "imageUrl": "https://picsum.photos/seed/asoebi13/800/1000",
-    "imageHint": "sequin gown"
+    "imageUrl": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800&q=80",
+    "imageHint": "sequin evening gown"
   },
   {
     "id": "product-14",
     "description": "Man wearing a classic Dashiki shirt with an intricate pattern",
-    "imageUrl": "https://picsum.photos/seed/dashiki14/800/1000",
-    "imageHint": "dashiki shirt"
+    "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+    "imageHint": "african dashiki shirt"
   },
   {
     "id": "course-1",
     "description": "Designer sketching a fashion illustration with colored markers",
-    "imageUrl": "https://picsum.photos/seed/illustration1/800/600",
-    "imageHint": "fashion illustration"
+    "imageUrl": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80",
+    "imageHint": "fashion illustration sketching"
   },
   {
     "id": "course-2",
     "description": "Fabric being draped on a mannequin in a design studio",
-    "imageUrl": "https://picsum.photos/seed/draping2/800/600",
-    "imageHint": "fashion draping"
+    "imageUrl": "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80",
+    "imageHint": "fashion draping mannequin"
   },
   {
     "id": "course-3",
     "description": "Close-up of a tablet screen showing digital fashion design software",
-    "imageUrl": "https://picsum.photos/seed/digital3/800/600",
-    "imageHint": "digital design"
+    "imageUrl": "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=800&q=80",
+    "imageHint": "digital design tablet"
   },
   {
     "id": "course-4",
     "description": "A fashion mood board with photos, sketches, and fabric swatches",
-    "imageUrl": "https://picsum.photos/seed/moodboard4/800/600",
-    "imageHint": "fashion business"
+    "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    "imageHint": "fashion mood board"
   },
   {
     "id": "course-5",
     "description": "A student using Procreate on an iPad to design clothing",
-    "imageUrl": "https://picsum.photos/seed/procreate5/800/600",
-    "imageHint": "digital design"
+    "imageUrl": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
+    "imageHint": "ipad digital art"
   },
   {
     "id": "course-6",
     "description": "A well-organized fashion business workspace with laptops and samples",
-    "imageUrl": "https://picsum.photos/seed/workspace6/800/600",
-    "imageHint": "fashion business"
+    "imageUrl": "https://images.unsplash.com/photo-1524749292158-7540c2494485?w=800&q=80",
+    "imageHint": "fashion business workspace"
   },
   {
     "id": "avatar-1",
     "description": "Portrait of a friendly and creative female fashion instructor",
-    "imageUrl": "https://picsum.photos/seed/woman1/400/400",
-    "imageHint": "woman portrait"
+    "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+    "imageHint": "professional woman portrait"
   },
   {
     "id": "avatar-2",
     "description": "Portrait of a professional and stylish male fashion instructor",
-    "imageUrl": "https://picsum.photos/seed/man2/400/400",
-    "imageHint": "man portrait"
+    "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    "imageHint": "professional man portrait"
   }
 ]
