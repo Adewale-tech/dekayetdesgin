@@ -12,7 +12,7 @@ import { useState } from "react";
 import { Skeleton } from "./ui/skeleton";
 
 export default function CartSheet() {
-  const [cartItems, setCartItems] = useState(products.slice(0, 2)); // Dummy data
+  const [cartItems, setCartItems] = useState<typeof products>([]);  // Start with empty cart
   const subtotal = cartItems.reduce((acc, item) => acc + item.price, 0);
 
   const handleRemove = (id: string) => {
@@ -25,9 +25,9 @@ export default function CartSheet() {
         <Button variant="ghost" size="icon" className="relative">
           <ShoppingBag className="h-6 w-6" />
           {cartItems.length > 0 && (
-             <span className="absolute top-0 right-0 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
-                {cartItems.length}
-             </span>
+            <span className="absolute top-0 right-0 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
+              {cartItems.length}
+            </span>
           )}
           <span className="sr-only">Open shopping cart</span>
         </Button>
@@ -83,7 +83,7 @@ export default function CartSheet() {
             <ShoppingBag className="h-16 w-16 text-muted-foreground" />
             <p className="text-lg font-medium text-muted-foreground">Your cart is empty</p>
             <SheetTrigger asChild>
-                <Button variant="outline">Continue Shopping</Button>
+              <Button variant="outline">Continue Shopping</Button>
             </SheetTrigger>
           </div>
         )}
